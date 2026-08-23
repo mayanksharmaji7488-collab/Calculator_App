@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="icon"
+      href="https://luxecalc.com/favicon.ico?favicon.4ab0e26e.ico"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="min-h-screen bg-[#050817] text-white flex justify-center items-center p-5">
+    <div class="calculator w-full max-w-100 p-6 rounded-5xl">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex items-center gap-3">
+          <div class="icon">+ -</div>
+          <div>
+            <h1 class="text-2xl font-bold">Calculator</h1>
+            <p class="text-white/50 text-sm">Perform quick calculations</p>
+          </div>
+        </div>
+        <div class="theme-button">@</div>
+      </div>
+
+      <!-- Display -->
+      <div class="display p-5 rounded-3xl mb-5">
+        <p
+          id="previousDisplay"
+          class="text-right text-white/40 text-lg h-7"
+        ></p>
+        <h2
+          id="currentDisplay"
+          class="text-right text-5xl font-light break-all"
+        >
+          0
+        </h2>
+        <div class="small-line"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="grid grid-cols-4 gap-3">
+        <!-- 1st Row -->
+        <button id="clear" class="clear">AC</button>
+        <button id="delete" class="action">DEL</button>
+        <button id="percentage" class="percentage">%</button>
+        <button id="divide" class="operator">÷</button>
+
+        <!-- 2nd Row -->
+        <button id="seven" class="number">7</button>
+        <button id="eight" class="number">8</button>
+        <button id="nine" class="number">9</button>
+        <button id="multiply" class="operator">x</button>
+
+        <!-- 3rd Row -->
+        <button id="four" class="number">4</button>
+        <button id="five" class="number">5</button>
+        <button id="six" class="number">6</button>
+        <button id="subtract" class="operator">-</button>
+
+        <!-- 4th Row -->
+        <button id="one" class="number">1</button>
+        <button id="two" class="number">2</button>
+        <button id="three" class="number">3</button>
+        <button id="add" class="operator">+</button>
+
+        <!-- 5th Row -->
+        <button id="zero" class="number col-span-2">0</button>
+        <button id="decimal" class="number">.</button>
+        <button id="equal" class="equal">=</button>
+      </div>
+
+      <!-- Footer -->
+      <p class="text-center text-white/30 mt-5 text-lg">Simple ・ Fast ・ Smart</p>
+    </div>
+
+    <script src="./Calculator.js"></script>
+  </body>
+</html>
